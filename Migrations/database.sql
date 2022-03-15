@@ -1,0 +1,2 @@
+CREATE USER aa_admin WITH PASSWORD '95nJJara@x~B';
+CREATE DATABASE applications
