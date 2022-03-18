@@ -69,6 +69,12 @@ namespace AA.UI
             Base.SetTitle("Редактирование приложения");
         }
 
+        public static void ChangeToApplicationStatisticsPage(String appName)
+        {
+            Base.MainFrame.Content = new ApplicationStatisticsPage();
+            Base.SetTitle($"Статистика по событиям ({appName})");
+        }
+
         #endregion Pages
 
         public static void SetUser(User user)

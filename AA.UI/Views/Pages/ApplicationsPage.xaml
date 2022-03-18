@@ -32,10 +32,12 @@
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
                     <TextBlock Text="{Binding Name}" FontSize="20" HorizontalAlignment="Center" />
                     <TextBlock Text="{Binding DateString}" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" />
+                    <Button Content="Статистика" Click="StatisticButton_Click" Grid.Row="2" Tag="{Binding Id}"/>
                 </Grid>
             </DataTemplate>
         </ListBox.ItemTemplate>

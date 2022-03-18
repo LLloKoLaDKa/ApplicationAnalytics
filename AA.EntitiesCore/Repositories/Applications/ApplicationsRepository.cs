@@ -26,15 +26,15 @@ namespace AA.EntitiesCore.Repositories.Applications
         {
             return UseContext(context =>
             {
-                return context.Applications.Where(a => a.UserId == userId).Count();
+                return context.Applications.Where(a => a.UserId == userId && !a.IsRemoved).Count();
             });
         }
 
-        public Application[] GetApplications()
+        public Application[] GetApplications(Guid userId)
         {
             return UseContext(context =>
             {
-                return context.Applications.Where(a => !a.IsRemoved).ToApplications();
+                return context.Applications.Where(a => a.UserId == userId && !a.IsRemoved).ToApplications();
             });
         }
 

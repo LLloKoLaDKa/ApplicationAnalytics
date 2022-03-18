@@ -16,7 +16,7 @@ namespace AA.Domain.Applications
             Id = id;
             UserId = userId;
             Name = name;
-            date = Date;
+            Date = date;
         }
     }
 }

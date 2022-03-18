@@ -27,7 +27,7 @@ namespace AA.EntitiesCore.Models.Converters
 
         internal static ApplicationEvent ToEvent(this ApplicationEventDb db)
         {
-            return new(db.Id, db.ApplicationId, db.Title);
+            return new(db.Id, db.ApplicationId, db.Type);
         }
 
         internal static ApplicationEvent[] ToEvents(this IEnumerable<ApplicationEventDb> dbs)
@@ -37,7 +37,7 @@ namespace AA.EntitiesCore.Models.Converters
 
         internal static ApplicationEventDb ToDb(this ApplicationEventBlank blank)
         {
-            return new(blank.Id.Value, blank.ApplicationId.Value, blank.Title, DateTime.Now);
+            return new(blank.Id.Value, blank.ApplicationId.Value, blank.Type.Value, DateTime.Now);
         }
 
         #endregion

@@ -6,13 +6,13 @@ namespace AA.Domain.Applications.Events
     {
         public Guid Id { get; }
         public Guid ApplicationId { get; }
-        public String Title { get; }
+        public ApplicationEventType Type { get; }
 
-        public ApplicationEvent(Guid id, Guid applicationId, String title)
+        public ApplicationEvent(Guid id, Guid applicationId, ApplicationEventType type)
         {
             Id = id;
             ApplicationId = applicationId;
-            Title = title;
+            Type = type;
         }
     }
 }

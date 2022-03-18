@@ -29,9 +29,9 @@ namespace AA.Services.Applications
             return _applicationsRepository.GetCountForUser(userId);
         }
 
-        public Application[] GetApplications()
+        public Application[] GetApplications(Guid userId)
         {
-            return _applicationsRepository.GetApplications();
+            return _applicationsRepository.GetApplications(userId);
         }
 
         public Result DeleteApp(Guid applicationId)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AA.Services.Applications;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace AA.UI.Views.Pages
     /// </summary>
     public partial class MainPage : Page
     {
+        private readonly ApplicationsService _applicationsService;
+
         public MainPage()
         {
             InitializeComponent();
+            _applicationsService = new();
+            if (App.CurrentUser is not null)
+            {
+                AppBlock.Visibility = Visibility.Visible;
+                AppBlock.Text = $"Приложений под вашим руководством: {_applicationsService.GetCountForUser(App.CurrentUser!.Id)}";
+            }
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using AA.Domain.Applications;
+using AA.Domain.Applications.Events;
 using AA.Domain.Results;
 using AA.Services.Applications;
+using AA.UI.Tools;
 using System;
 using System.Windows.Controls;
 
@@ -25,8 +27,13 @@ namespace AA.UI.Views.Pages
             {
                 Application = new ApplicationBlank(app.Id, app.UserId, app.Name);
                 deleteButton.Visibility = System.Windows.Visibility.Visible;
+
+                EventOneButton.Visibility = System.Windows.Visibility.Visible;
+                EventTwoButton.Visibility = System.Windows.Visibility.Visible;
+                EventThreeButton.Visibility = System.Windows.Visibility.Visible;
+                EventFourButton.Visibility = System.Windows.Visibility.Visible;
             }
-            else Application = new ApplicationBlank();
+            else Application = new ApplicationBlank(null, App.CurrentUser.Id, null);
 
             this.DataContext = this;
         }
@@ -59,6 +66,28 @@ namespace AA.UI.Views.Pages
 
             App.ShowMessage("Приложение удалено!");
             App.ChangeToApplicationsPage();
+        }
+
+        private async void SendEvent_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button is null) return;
+
+            Int32? eventNumber = Convert.ToInt32(button.Tag);
+            if (eventNumber is null) return;
+
+            ApplicationEventBlank eventBlank = new(null, Application.Id,
+                eventNumber switch
+                {
+                    1 => ApplicationEventType.EventOne,
+                    2 => ApplicationEventType.EventTwo,
+                    3 => ApplicationEventType.EventThree,
+                    4 => ApplicationEventType.EventFour,
+                    _ => throw new Exception("Точка недостижимости")
+                }
+            );
+
+            await HttpHelper.SaveEvent(eventBlank);
         }
     }
 }

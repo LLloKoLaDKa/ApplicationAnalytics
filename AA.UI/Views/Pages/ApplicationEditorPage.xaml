@@ -12,11 +12,18 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition/>
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Для создания приложения и отслеживания его событий, введите название приложения и нажмите кнопку." TextWrapping="Wrap" TextAlignment="Center"/>
+        <TextBlock Grid.ColumnSpan="4" Text="Для создания приложения и отслеживания его событий, введите название приложения и нажмите кнопку." TextWrapping="Wrap" TextAlignment="Center"/>
 
-        <Grid Grid.Row="1" HorizontalAlignment="Center" Height="150">
+        <Grid Grid.Row="1" HorizontalAlignment="Center" Height="150" Grid.ColumnSpan="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -33,5 +40,10 @@
             <Button x:Name="saveButton" Content="Сохранить" Grid.Row="1" Grid.ColumnSpan="2" Click="saveButton_Click"/>
             <Button x:Name="deleteButton" Content="Удалить" Foreground="Red" Grid.Row="2" Grid.ColumnSpan="2" Click="deleteButton_Click" Visibility="Hidden"/>
         </Grid>
+
+        <Button x:Name="EventOneButton" Grid.Row="2" Grid.Column="0" Content="Событие 1" Tag="1" Click="SendEvent_Click" Visibility="Hidden"/>
+        <Button x:Name="EventTwoButton" Grid.Row="2" Grid.Column="1" Content="Событие 2" Tag="2" Click="SendEvent_Click" Visibility="Hidden"/>
+        <Button x:Name="EventThreeButton" Grid.Row="2" Grid.Column="2" Content="Событие 3" Tag="3" Click="SendEvent_Click" Visibility="Hidden"/>
+        <Button x:Name="EventFourButton" Grid.Row="2" Grid.Column="3" Content="Событие 4" Tag="4" Click="SendEvent_Click" Visibility="Hidden"/>
     </Grid>
 </Page>

@@ -1,5 +1,7 @@
 ﻿using AA.Domain.Applications;
 using AA.Services.Applications;
+using System;
+using System.Linq;
 using System.Windows.Controls;
 
 namespace AA.UI.Views.Pages
@@ -22,7 +24,7 @@ namespace AA.UI.Views.Pages
 
         public void LoadApplications()
         {
-            Apps =_applicationsService.GetApplications();
+            Apps =_applicationsService.GetApplications(App.CurrentUser.Id);
             this.DataContext = this;
         }
 
@@ -37,6 +39,17 @@ namespace AA.UI.Views.Pages
             App.ChangeToEditApplicationPage(app);
 
             list.SelectedIndex = -1;
+        }
+
+        private void StatisticButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            Guid appId = Guid.Parse(button.Tag.ToString());
+
+            Application app = Apps.FirstOrDefault(app => app.Id == appId);
+            if (app is null) return;
+
+            App.ChangeToApplicationStatisticsPage(app.Name);
         }
     }
 }

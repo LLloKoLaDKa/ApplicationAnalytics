@@ -45,8 +45,11 @@ namespace AA.UI.Views.Pages
                 return;
             }
 
-            App.ShowMessage("Регистрация прошла успешно! Можете воcпользоваться данными для входа на странице авторизации.");
-            App.ChangeToAuthorizationPage();
+            Result userResult = _usersService.LogIn(blank);
+            App.SetUser(userResult.Data is User user ? user : throw new Exception("Точка недостижимости"));
+
+            App.ShowMessage("Регистрация прошла успешно!");
+            App.ChangeToMainPage();
         }
     }
 }
