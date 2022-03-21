@@ -27,21 +27,28 @@ namespace AA.UI.Views.Pages
     public partial class ApplicationStatisticsPage : Page
     {
         private readonly ApplicationEventsService _applicationEventsService;
+        public AA.Domain.Applications.Application App { get; set; }
 
-        public Func<ChartPoint, string> PointLabel { get; set; }
-
-        public ApplicationStatisticsPage()
+        public ApplicationStatisticsPage(AA.Domain.Applications.Application application)
         {
             InitializeComponent();
 
             _applicationEventsService = new();
+            App = application;
             LoadData();
 
         }
 
         public void LoadData()
         {
-            ApplicationEvent[] events = _applicationEventsService.GetAllEvents();
+            ApplicationEvent[] events = _applicationEventsService.GetApplicationId(App.Id);
+            if (events.Length == 0)
+            {
+                PieCharts.Visibility = Visibility.Hidden;
+                PlaceHolderText.Visibility = Visibility.Visible;
+                return;
+            }
+
             Dictionary<ApplicationEventType, Int32> dictionary = events.GroupBy(ev => ev.Type).ToDictionary(group => group.Key, group => group.Count());
 
             SeriesCollection series = new();

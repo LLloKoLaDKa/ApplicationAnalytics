@@ -21,7 +21,7 @@ namespace AA.Domain.Applications.Events
                 case ApplicationEventType.EventThree: return "Событие 3";
                 case ApplicationEventType.EventFour: return "Событие 4";
 
-                default: throw new Exception("Точка недостижимости");
+                default:    throw new Exception("Точка недостижимости");
             }
         }
     }

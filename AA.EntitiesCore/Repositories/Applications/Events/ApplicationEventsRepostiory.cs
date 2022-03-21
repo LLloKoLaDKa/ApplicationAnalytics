@@ -1,12 +1,16 @@
 ﻿using AA.Domain.Applications.Events;
 using AA.EntitiesCore.Extensions;
-using AA.EntitiesCore.Models;
-using AA.EntitiesCore.Models.Converters;
+using AA.EntitiesCore.Models.Applications;
+using AA.EntitiesCore.Models.Applications.Converters;
+using System;
+using System.Linq;
 
 namespace AA.EntitiesCore.Repositories.Applications.Events
 {
     public class ApplicationEventsRepostiory : BaseRepository
     {
+        public ApplicationEventsRepostiory(String? connectionString = null) : base(connectionString) { }
+
         public void SaveEvent(ApplicationEventBlank blank)
         {
             UseContext(context =>
@@ -19,11 +23,11 @@ namespace AA.EntitiesCore.Repositories.Applications.Events
             });
         }
 
-        public ApplicationEvent[] GetAllEvents()
+        public ApplicationEvent[] GetApplicationEvents(Guid applicationId)
         {
             return UseContext(context =>
             {
-                return context.ApplicationEvents.ToEvents();
+                return context.ApplicationEvents.Where(e => e.ApplicationId == applicationId).ToEvents();
             });
         }
     }

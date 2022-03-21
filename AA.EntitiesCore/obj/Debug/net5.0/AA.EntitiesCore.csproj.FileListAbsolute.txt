@@ -1,0 +1,15 @@
+D:\git\ApplicationAnalytics\AA.EntitiesCore\bin\Debug\net5.0\AA.EntitiesCore.deps.json
+D:\git\ApplicationAnalytics\AA.EntitiesCore\bin\Debug\net5.0\AA.EntitiesCore.dll
+D:\git\ApplicationAnalytics\AA.EntitiesCore\bin\Debug\net5.0\ref\AA.EntitiesCore.dll
+D:\git\ApplicationAnalytics\AA.EntitiesCore\bin\Debug\net5.0\AA.EntitiesCore.pdb
+D:\git\ApplicationAnalytics\AA.EntitiesCore\bin\Debug\net5.0\AA.Domain.dll
+D:\git\ApplicationAnalytics\AA.EntitiesCore\bin\Debug\net5.0\AA.Domain.pdb
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.csproj.AssemblyReference.cache
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.AssemblyInfoInputs.cache
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.AssemblyInfo.cs
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.csproj.CoreCompileInputs.cache
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.csproj.CopyComplete
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.dll
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\ref\AA.EntitiesCore.dll
+D:\git\ApplicationAnalytics\AA.EntitiesCore\obj\Debug\net5.0\AA.EntitiesCore.pdb

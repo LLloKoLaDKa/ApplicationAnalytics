@@ -1,7 +1,7 @@
 ﻿using AA.Domain.Applications;
 using AA.EntitiesCore.Extensions;
-using AA.EntitiesCore.Models;
-using AA.EntitiesCore.Models.Converters;
+using AA.EntitiesCore.Models.Applications;
+using AA.EntitiesCore.Models.Applications.Converters;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -19,6 +19,7 @@ namespace AA.EntitiesCore.Repositories.Applications
                 context.Attach(db);
                 context.Applications.AddOrUpdate(db, context);
                 context.SaveChanges();
+                context.Database.Migrate();
             });
         }
 

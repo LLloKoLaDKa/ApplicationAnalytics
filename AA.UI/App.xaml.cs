@@ -69,10 +69,10 @@ namespace AA.UI
             Base.SetTitle("Редактирование приложения");
         }
 
-        public static void ChangeToApplicationStatisticsPage(String appName)
+        public static void ChangeToApplicationStatisticsPage(Domain.Applications.Application app)
         {
-            Base.MainFrame.Content = new ApplicationStatisticsPage();
-            Base.SetTitle($"Статистика по событиям ({appName})");
+            Base.MainFrame.Content = new ApplicationStatisticsPage(app);
+            Base.SetTitle($"Статистика по событиям ({app.Name})");
         }
 
         #endregion Pages

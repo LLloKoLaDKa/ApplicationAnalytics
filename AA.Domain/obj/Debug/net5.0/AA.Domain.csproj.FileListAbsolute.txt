@@ -1,0 +1,12 @@
+D:\git\ApplicationAnalytics\AA.Domain\bin\Debug\net5.0\AA.Domain.deps.json
+D:\git\ApplicationAnalytics\AA.Domain\bin\Debug\net5.0\AA.Domain.dll
+D:\git\ApplicationAnalytics\AA.Domain\bin\Debug\net5.0\ref\AA.Domain.dll
+D:\git\ApplicationAnalytics\AA.Domain\bin\Debug\net5.0\AA.Domain.pdb
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.csproj.AssemblyReference.cache
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.AssemblyInfoInputs.cache
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.AssemblyInfo.cs
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.csproj.CoreCompileInputs.cache
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.dll
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\ref\AA.Domain.dll
+D:\git\ApplicationAnalytics\AA.Domain\obj\Debug\net5.0\AA.Domain.pdb

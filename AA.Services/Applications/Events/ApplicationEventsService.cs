@@ -8,9 +8,9 @@ namespace AA.Services.Applications.Events
     {
         private readonly ApplicationEventsRepostiory _applicationEventsRepository;
 
-        public ApplicationEventsService()
+        public ApplicationEventsService(String? connectionString = null)
         {
-            _applicationEventsRepository = new();
+            _applicationEventsRepository = new(connectionString);
         }
 
         public void SaveEvent(ApplicationEventBlank blank)
@@ -20,9 +20,9 @@ namespace AA.Services.Applications.Events
             _applicationEventsRepository.SaveEvent(blank);
         }
 
-        public ApplicationEvent[] GetAllEvents()
+        public ApplicationEvent[] GetApplicationId(Guid applicationId)
         {
-            return _applicationEventsRepository.GetAllEvents();
+            return _applicationEventsRepository.GetApplicationEvents(applicationId);
         }
     }
 }

@@ -1,8 +1,7 @@
-﻿using AA.Domain.Results;
-using AA.Domain.Users;
+﻿using AA.Domain.Users;
 using AA.EntitiesCore.Extensions;
-using AA.EntitiesCore.Models;
-using AA.EntitiesCore.Models.Converters;
+using AA.EntitiesCore.Models.Users;
+using AA.EntitiesCore.Models.Users.Converters;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

@@ -8,6 +8,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ApplicationStatisticsPage">
-
-    <lvc:PieChart x:Name="PieCharts" LegendLocation="Right"/>
+    <Grid>
+        <TextBlock x:Name="PlaceHolderText" Text="У данного приложения отсутствует статистика из-за нехватки данных по событиям. Зайдите в редактор приложения и создайте несколько событий." TextWrapping="Wrap" FontSize="16" Visibility="Hidden"/>
+        <lvc:PieChart x:Name="PieCharts" LegendLocation="Right"/>
+    </Grid>
 </Page>

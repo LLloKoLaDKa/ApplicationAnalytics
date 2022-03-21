@@ -1,7 +1,7 @@
 ﻿using AA.Domain.Applications.Events;
-using AA.Services.Applications;
 using AA.Services.Applications.Events;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace AA.API.Areas.ApplicationEvents.Controllers
 {
@@ -11,7 +11,7 @@ namespace AA.API.Areas.ApplicationEvents.Controllers
 
         public ApplicationEventsController()
         {
-            _applicationsService = new();
+            _applicationsService = new("Server=postgres;Username=aa_admin;Database=analytics;Port=5432;Password=95nJJara@x~Bs");
         }
 
         [HttpPost("Events/Save")]

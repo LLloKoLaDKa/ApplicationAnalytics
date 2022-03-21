@@ -1,0 +1,17 @@
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.Services.deps.json
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.Services.dll
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\ref\AA.Services.dll
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.Services.pdb
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.Domain.dll
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.EntitiesCore.dll
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.Domain.pdb
+D:\git\ApplicationAnalytics\AA.Services\bin\Debug\net5.0\AA.EntitiesCore.pdb
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.csproj.AssemblyReference.cache
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.AssemblyInfoInputs.cache
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.AssemblyInfo.cs
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.csproj.CoreCompileInputs.cache
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.csproj.CopyComplete
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.dll
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\ref\AA.Services.dll
+D:\git\ApplicationAnalytics\AA.Services\obj\Debug\net5.0\AA.Services.pdb

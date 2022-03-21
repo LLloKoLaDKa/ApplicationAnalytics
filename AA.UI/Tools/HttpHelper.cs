@@ -10,7 +10,7 @@ namespace AA.UI.Tools
     internal class HttpHelper
     {
         private static readonly HttpClient _client = new();
-        public static readonly String _host = "https://localhost:44356/";
+        public static readonly String _host = "http://localhost:5000/";
 
         public static async Task SaveEvent(ApplicationEventBlank applicationEvent)
         {

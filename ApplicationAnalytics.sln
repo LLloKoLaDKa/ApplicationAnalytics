@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AA.API", "AA.API\AA.API.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AA.Domain", "AA.Domain\AA.Domain.csproj", "{97B30508-E4C7-4E65-8D29-B88EFC063AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.Services", "AA.Services\AA.Services.csproj", "{AFDD9B78-AEF7-4F08-BBE9-E1E5840A0B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AA.Services", "AA.Services\AA.Services.csproj", "{AFDD9B78-AEF7-4F08-BBE9-E1E5840A0B3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8EB78FC-1E3A-4A2A-A4EF-73905A58D2D2}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

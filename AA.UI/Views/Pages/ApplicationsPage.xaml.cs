@@ -49,7 +49,7 @@ namespace AA.UI.Views.Pages
             Application app = Apps.FirstOrDefault(app => app.Id == appId);
             if (app is null) return;
 
-            App.ChangeToApplicationStatisticsPage(app.Name);
+            App.ChangeToApplicationStatisticsPage(app);
         }
     }
 }
